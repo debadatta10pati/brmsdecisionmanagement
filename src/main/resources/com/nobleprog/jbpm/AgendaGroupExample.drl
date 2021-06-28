@@ -1,0 +1,26 @@
+package com.nobleprog.jbpm;
+
+rule "Social security payout rule for people with exspouse"
+agenda-group "Group MarriedRetirees"
+salience 100
+
+    when
+        $r : RequestPojo((income<10000) &&(divorced =="Yes" ))
+    then
+    
+    modify ($r)
+    {  setBenefits(2000) }
+
+
+end
+
+rule "Social security payout rule for people who never married"
+salience 200
+
+    when
+        $r : RequestPojo((income<10000) &&(married=="No"))
+    then
+       modify ($r)
+    {  setBenefits(2500) }
+
+end

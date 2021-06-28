@@ -1,0 +1,55 @@
+<graph>
+  <entries>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@Training/Nobleprog/src/main/resources/com/nobleprog/jbpm/InvestmentCalculation.gdst</uri>
+          <fileName>InvestmentCalculation.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://13b7f6116c76a28f0a22c3d3b71891a5a73a496c@Training/Nobleprog/src/main/resources/com/nobleprog/jbpm/InvestmentCalculation.gdst</uri>
+        <fileName>InvestmentCalculation.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>532.6666666666667</x>
+      <y>-1173.0</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@Training/Nobleprog/src/main/resources/com/nobleprog/jbpm/LoanCalculation.gdst</uri>
+          <fileName>LoanCalculation.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://8bc83380c19b47b0f96a434aed5d77add98e8895@Training/Nobleprog/src/main/resources/com/nobleprog/jbpm/LoanCalculation.gdst</uri>
+        <fileName>LoanCalculation.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>-412.0</x>
+      <y>-1181.3333333333333</y>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.impl.ObservablePathImpl">
+        <path class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+          <uri>default://master@Training/Nobleprog/src/main/resources/com/nobleprog/jbpm/Taxcalculation.gdst</uri>
+          <fileName>Taxcalculation.gdst</fileName>
+          <attributes/>
+          <hasVersionSupport>true</hasVersionSupport>
+        </path>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://ffa0bd9dc70652026ba1e0f88d00bebc49d0ec03@Training/Nobleprog/src/main/resources/com/nobleprog/jbpm/Taxcalculation.gdst</uri>
+        <fileName>Taxcalculation.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+      <x>52.66666666666674</x>
+      <y>-814.6666666666665</y>
+    </entry>
+  </entries>
+</graph>

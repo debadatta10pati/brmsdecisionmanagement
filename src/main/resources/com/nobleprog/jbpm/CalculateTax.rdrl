@@ -1,0 +1,15 @@
+package com.nobleprog.jbpm;
+
+import java.lang.Number;
+
+rule "CalculateTax"
+	ruleflow-group "evalTax"
+	dialect "mvel"
+	when
+		$request : RequestPojo( income <= 10000 , income >= 5000 )
+	then
+		System.out.println("Fired rule Calculate Tax : request.income "+$request.income );
+		modify( $request ) {
+				setTax( $request.income*0.05 )
+		}
+end

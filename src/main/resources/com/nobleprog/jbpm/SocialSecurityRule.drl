@@ -1,0 +1,30 @@
+package com.nobleprog.jbpm;
+
+global java.util.List globalList;
+rule "Social security payout rule for people without children"
+ruleflow-group "evalBenefits"
+
+    when
+        $r : RequestPojo((income<10000) &&(married=="Yes" ))
+    then
+        modify ($r){
+            setBenefits(500)
+        }
+        System.out.println("Rule fired :Social security payout rule for people without children : Benefit set to " + $r.getBenefits());
+
+end
+
+rule "Social security payout rule for people with chicldren"
+salience 10
+ruleflow-group "evalBenefits"
+
+    when
+        $r : RequestPojo((income<10000) 
+                        &&(childrenUnder18 == "Yes"))
+    then
+        modify ($r){
+            setBenefits(300)
+        }
+        System.out.println("Rule fired :Social security payout rule for people with chicldren : Benefit set to " + $r.getBenefits());
+
+end

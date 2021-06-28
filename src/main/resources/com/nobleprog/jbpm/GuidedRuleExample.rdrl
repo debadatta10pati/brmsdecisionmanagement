@@ -1,0 +1,13 @@
+package com.nobleprog.jbpm;
+
+import java.lang.Number;
+
+rule "GuidedRuleExample"
+	dialect "mvel"
+	when
+		request : RequestPojo( income > 10000 , childrenUnder18 == "Yes" , married == "No" )
+	then
+		modify( request ) {
+				setBenefits( 10000 )
+		}
+end

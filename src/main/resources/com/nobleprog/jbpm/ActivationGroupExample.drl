@@ -1,0 +1,29 @@
+package com.nobleprog.jbpm;
+
+rule "Social security payout rule for people with disabled children"
+activation-group "Children"
+salience 100
+
+    when
+        $r : RequestPojo((income<20000) &&(childrenWithDisabilities == "Yes" ))
+    then
+    
+    modify ($r)
+    {  setBenefits(2000) }
+
+end
+
+rule "Social security payout rule for people with diabled children under 18"
+activation-group "Children"
+salience 200
+
+    when
+        $r : RequestPojo((income<20000) 
+             &&(childrenWithDisabilities =="Yes" )
+             &&(childrenUnder18 == "Yes"))
+    then
+    $r.setBenefits(1500);
+    update($r)
+end
+
+
